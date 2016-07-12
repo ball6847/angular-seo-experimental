@@ -26,6 +26,7 @@
     "main-bower-files": "^2.8.0",
     "pug": "*",
     "run-sequence": "^1.1.5",
+    "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.6.1"
   }
 }

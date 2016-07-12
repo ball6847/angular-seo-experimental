@@ -11,6 +11,7 @@ gutil                 = require 'gulp-util'
 runseq                = require 'run-sequence'
 _                     = require 'lodash'
 appfiles              = require './lib/scan-app-files'
+createBundles         = require './lib/create-bundles'
 pkg                   = require './package.json'
 
 # --------------------------------------------------------------------
@@ -46,6 +47,11 @@ bundles = [
     destination: 'build/app/'
   }
 ]
+
+gulp.task 'compile', ->
+  taskArgs = process.argv.slice(2, process.argv.length)
+  if 'build' in taskArgs then createBundles(bundles) else createBundles(bundles, true, browsersync)
+
 
 # --------------------------------------------------------------------
 
