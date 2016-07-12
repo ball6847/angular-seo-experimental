@@ -2,4 +2,6 @@
 /build/*
 /docker/logs/*
 
+/docker-compose.override.yml
+
 !*.gitkeep
