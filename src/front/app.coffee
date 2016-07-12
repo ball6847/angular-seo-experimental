@@ -2,7 +2,7 @@ Router = require './routes'
 
 app = angular.module 'app', [
   'ui.router'
-  'viewhead'
+  'ui.router.title'
 ]
 
 app.constant 'config',

@@ -1,3 +1,5 @@
+  <div id="top"></div>
+
 <!-- Header -->
   <div id="header">
 
@@ -13,10 +15,10 @@
       <!-- Nav -->
         <nav id="nav">
           <ul>
-            <li><a ui-sref="front.home" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Home</span></a></li>
-            <li><a ui-sref="front.portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
-            <li><a ui-sref="front.about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
-            <li><a ui-sref="front.contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+            <li><a ui-sref="front.home" du-smooth-scroll="top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Home</span></a></li>
+            <li><a ui-sref="front.portfolio" du-smooth-scroll="top" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
+            <li><a ui-sref="front.about" du-smooth-scroll="top" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
+            <li><a ui-sref="front.contact" du-smooth-scroll="top" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
           </ul>
         </nav>
 
@@ -38,7 +40,7 @@
   </div>
 
 <!-- Main -->
-  <div id="main" ui-view></div>
+  <div id="main" ui-view  autoscroll="true"></div>
 
 <!-- Footer -->
   <div id="footer">

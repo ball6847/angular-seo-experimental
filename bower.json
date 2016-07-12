@@ -24,7 +24,8 @@
     "angular-moment": "~0.10.1",
     "angular-loading-bar": "~0.8.0",
     "angularjs-viewhead": "~0.0.1",
-    "angular-nl2br": "https://github.com/philsch/angular-nl2br.git#^1.0.4"
+    "angular-nl2br": "https://github.com/philsch/angular-nl2br.git#^1.0.4",
+    "angular-ui-router-title": "^0.0.4"
   },
   "overrides": {
     "bootstrap": {
