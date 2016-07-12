@@ -10,6 +10,7 @@ plumber               = require 'gulp-plumber'
 gutil                 = require 'gulp-util'
 runseq                = require 'run-sequence'
 _                     = require 'lodash'
+historyApiFallback    = require('connect-history-api-fallback')
 appfiles              = require './lib/scan-app-files'
 createBundles         = require './lib/create-bundles'
 pkg                   = require './package.json'
@@ -57,7 +58,8 @@ tasks =
     return
   browsersync:
     callback: ->
-      middleware = []
+      middleware =
+        historyApiFallback()
       browsersync
         server:
           baseDir: dest

@@ -15,7 +15,7 @@ app.constant 'config',
 app.config ($urlRouterProvider, $urlMatcherFactoryProvider, $locationProvider, config) ->
   $urlRouterProvider.otherwise '/'
   $urlMatcherFactoryProvider.strictMode false
-  $locationProvider.html5Mode false
+  $locationProvider.html5Mode true
   $locationProvider.hashPrefix '!'
 
 app.config Router
