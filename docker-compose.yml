@@ -5,6 +5,9 @@ services:
     image: million12/nginx-php:php70
     volumes:
       - ./:/data/htdocs
+      - ./docker/logs:/logs
       - ./docker/etc/nginx/conf.d:/etc/nginx/hosts.d
       - /etc/localtime:/etc/localtime:ro
     working_dir: /data/htdocs
+  prerender:
+    image: earlyclaim/docker-prerender-with-redis:latest
