@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  nginx:
+    image: million12/nginx-php:php70
+    volumes:
+      - ./:/data/htdocs
+      - ./docker/etc/nginx/conf.d:/etc/nginx/hosts.d
+      - /etc/localtime:/etc/localtime:ro
+    working_dir: /data/htdocs

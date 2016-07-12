@@ -71,6 +71,7 @@ tasks =
   assets:
     src: [
       "#{src}*/assets/**/*.*"
+      "#{src}/robots.txt"
       "!#{src}*/assets/*.less"
     ]
     dest: dest
