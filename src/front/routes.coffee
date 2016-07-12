@@ -1,20 +1,22 @@
+FrontController = require './controllers/front'
 
 module.exports = ($stateProvider, config) ->
   $stateProvider
     .state 'front',
       abstract: true
       url: '/',
+      controller: FrontController
       templateUrl: "/front/templates/layout.html"
     .state 'front.home',
       url: '',
       templateUrl: "/front/templates/home.html"
       resolve:
         $title: () -> "Home"
-    .state 'front.portfolio',
-      url: 'portfolio',
-      templateUrl: "/front/templates/portfolio.html"
+    .state 'front.why',
+      url: 'why',
+      templateUrl: "/front/templates/why.html"
       resolve:
-        $title: () -> "Portfolio"
+        $title: () -> "Why"
     .state 'front.about',
       url: 'about',
       templateUrl: "/front/templates/about.html"

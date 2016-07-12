@@ -3,7 +3,7 @@ doctype html
 html(ng-app="app")
   head
     meta(charset='utf-8')
-    title(ng-bind="($title || 'Home') + ' - SEO Experimental for Angular JS'")
+    title(ng-bind="$title && ($title || 'Home') + ' - SEO Experimental for Angular JS'")
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
     link(href="/assets/img/favicon.ico", rel="icon", type="image/x-icon")
