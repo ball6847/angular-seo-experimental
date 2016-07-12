@@ -1,4 +1,6 @@
 
 module.exports = ($stateProvider, config) ->
   $stateProvider
-    .state 'auth'
+    .state 'home',
+      url: '/',
+      templateUrl: "/front/templates/layout.html"
