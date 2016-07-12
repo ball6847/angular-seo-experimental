@@ -5,58 +5,48 @@
   <div class="container">
 
     <header>
-      <h2>Portfolio</h2>
+      <h2>ทำไมต้องทดสอบ ?</h2>
     </header>
 
-    <p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-      egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-      Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
-      fusce hendrerit lacus ridiculus.</p>
+    <p>Single Page Application หรือ SPA เป็นแนวทางการทำเว็บไซต์อีกรูปหนึ่ง ที่เข้ามาแก้ปัญหาหลายๆอย่างในการทำเว็บไซต์</p>
 
-      <div class="row">
-        <div class="4u 12u$(mobile)">
-          <article class="item">
-            <a href="#" class="image fit"><img src="/front/assets/images/pic02.jpg" alt="" /></a>
-            <header>
-              <h3>Ipsum Feugiat</h3>
-            </header>
-          </article>
-          <article class="item">
-            <a href="#" class="image fit"><img src="/front/assets/images/pic03.jpg" alt="" /></a>
-            <header>
-              <h3>Rhoncus Semper</h3>
-            </header>
-          </article>
-        </div>
-        <div class="4u 12u$(mobile)">
-          <article class="item">
-            <a href="#" class="image fit"><img src="/front/assets/images/pic04.jpg" alt="" /></a>
-            <header>
-              <h3>Magna Nullam</h3>
-            </header>
-          </article>
-          <article class="item">
-            <a href="#" class="image fit"><img src="/front/assets/images/pic05.jpg" alt="" /></a>
-            <header>
-              <h3>Natoque Vitae</h3>
-            </header>
-          </article>
-        </div>
-        <div class="4u$ 12u$(mobile)">
-          <article class="item">
-            <a href="#" class="image fit"><img src="/front/assets/images/pic06.jpg" alt="" /></a>
-            <header>
-              <h3>Dolor Penatibus</h3>
-            </header>
-          </article>
-          <article class="item">
-            <a href="#" class="image fit"><img src="/front/assets/images/pic07.jpg" alt="" /></a>
-            <header>
-              <h3>Orci Convallis</h3>
-            </header>
-          </article>
-        </div>
-      </div>
+    <h3>ลดปัญหา Server Load</h3>
 
-    </div>
-  </section>
+    <p>SPA จะช่วยลดจำนวน HTTP Request ที่ browser ร้องขอไปยัง server เพราะทุกครั้งที่เปลี่ยนหน้าจะไม่มีการร้องขอไฟล์ static ต่างๆใหม่จะมีการเรียกแค่ไฟล์ที่จำเป็นต้องใช้เท่านั้น</p>
+
+    <h3>ลดความซับซ้อนของโปรแกรมในฝั่ง server</h3>
+
+    <p>การแสดงผลทั้งหมดจะถูก render ในฝั่ง client ทำให้ไม่มีความจำเป็นต้องใช้ template engine ในฝั่ง server อีกต่อไป <br>ลืมไปเลย Twig, Smarty, Jade, Blade<br>
+    ประหยัด CPU ไม่เปลือง Memory ของ server ทำให้รองรับผู้ใช้ได้เพิ่มขึ้นอีก</p>
+
+    <h3>แยก Frontend/Server-side Developer ได้ชัดเจน</h3>
+
+    <p>Frontend เขียน SPA เป็นหลัก ส่วน Server-side ก็ทำงานกับ Database เป็นหลัก เขียน WebService เพื่อให้ฝั่ง Frontend เอาไปใช้ แถม WebService ที่เขียนยังเอาไปต่อยอดกับการทำ Mobile App ได้อีก</p>
+
+    <h3>SEO คืออุปสรรค์</h3>
+
+    <p>แต่สิ่งเดียวที่ไม่เป็นใจ ก็คือ SEO เพราะ Search Engine ไม่สามารถเข้าใจ Javascript ได้, แต่ก็มี Guidline ต่างๆของ Google ที่พยายามจะแก้ไขปัญหานี้ และนี่คือสิ่งที่เรากำลังจะทำการทดลองกัน</p>
+
+    <h3>วัตถุดิบของเรา</h3>
+
+    <p>- เว็บนี้เขียนขึ้นด้วย Angular JS แบบง่ายๆ เปิด HTML5 mode และไม่มีอะไรซับซ้อน<br>
+      - ใช้ Prerender Service ในการทำ HTML Snapshot สำหรับ Crawler<br>
+      - ใช้ Nginx เป็น WebServer<br>
+      - resource ทั้งหมดเป็น Static Content ไม่มี Server Side Programmer นะคร้าบ<br>
+      - deploy ผ่าน Docker</p>
+
+    <h3>แหล่งข้อมูลอ้างอิง</h3>
+
+    <p>
+      - <a href="https://prerender.io/js-seo/angularjs-seo-get-your-site-indexed-and-to-the-top-of-the-search-results/">https://prerender.io/js-seo/angularjs-seo-get-your-site-indexed-and-to-the-top-of-the-search-results/</a><br>
+      - <a href="https://webmasters.googleblog.com/2015/10/deprecating-our-ajax-crawling-scheme.html">https://webmasters.googleblog.com/2015/10/deprecating-our-ajax-crawling-scheme.html</a><br>
+      - <a href="https://developers.google.com/webmasters/ajax-crawling/docs/specification">https://developers.google.com/webmasters/ajax-crawling/docs/specification</a>
+
+
+    </p>
+
+
+
+
+  </div>
+</section>
