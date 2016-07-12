@@ -2428,21 +2428,21 @@
 						line-height: 2.25em;
 					}
 
-			body.header-visible #main {
+			.header-visible #main {
 				-moz-transform: translateX(275px);
 				-webkit-transform: translateX(275px);
 				-ms-transform: translateX(275px);
 				transform: translateX(275px);
 			}
 
-			body.header-visible #headerToggle {
+			.header-visible #headerToggle {
 				-moz-transform: translateX(275px);
 				-webkit-transform: translateX(275px);
 				-ms-transform: translateX(275px);
 				transform: translateX(275px);
 			}
 
-			body.header-visible #header {
+			.header-visible #header {
 				-moz-transform: translateX(0);
 				-webkit-transform: translateX(0);
 				-ms-transform: translateX(0);

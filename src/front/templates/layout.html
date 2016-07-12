@@ -1,4 +1,4 @@
-  <div id="top"></div>
+<div ng-class="{'header-visible': showMenu}">
 
 <!-- Header -->
   <div id="header">
@@ -15,10 +15,10 @@
       <!-- Nav -->
         <nav id="nav">
           <ul>
-            <li><a ui-sref="front.home" id="top-link" class="skel-layers-ignoreHref" ng-class="{active: isOnPage('front.home')}"><span class="icon fa-home">หน้าแรก</span></a></li>
-            <li><a ui-sref="front.why" id="portfolio-link" class="skel-layers-ignoreHref" ng-class="{active: isOnPage('front.why')}"><span class="icon fa-th">ทำไมต้องทดสอบ ?</span></a></li>
-            <li><a ui-sref="front.about" id="about-link" class="skel-layers-ignoreHref" ng-class="{active: isOnPage('front.about')}"><span class="icon fa-user">เกี่ยวกับผม</span></a></li>
-            <li><a ui-sref="front.contact" id="contact-link" class="skel-layers-ignoreHref" ng-class="{active: isOnPage('front.contact')}"><span class="icon fa-envelope">ติดต่อผม</span></a></li>
+            <li><a ui-sref="front.home" ng-click="showMenu = false" id="top-link" class="skel-layers-ignoreHref" ng-class="{active: page == 'front.home'}"><span class="icon fa-home">หน้าแรก</span></a></li>
+            <li><a ui-sref="front.why" ng-click="showMenu = false" id="portfolio-link" class="skel-layers-ignoreHref" ng-class="{active: page == 'front.why'}"><span class="icon fa-th">ทำไมต้องทดสอบ ?</span></a></li>
+            <li><a ui-sref="front.about" ng-click="showMenu = false" id="about-link" class="skel-layers-ignoreHref" ng-class="{active: page == 'front.about'}"><span class="icon fa-user">เกี่ยวกับผม</span></a></li>
+            <li><a ui-sref="front.contact" ng-click="showMenu = false" id="contact-link" class="skel-layers-ignoreHref" ng-class="{active: page ==  'front.contact'}"><span class="icon fa-envelope">ติดต่อผม</span></a></li>
           </ul>
         </nav>
 
@@ -51,3 +51,7 @@
       </ul>
 
   </div>
+
+  <div id="headerToggle"><a href ng-click="showMenu = !showMenu" class="toggle"></a></div>
+
+</div>

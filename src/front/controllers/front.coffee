@@ -3,9 +3,11 @@ class FrontController
 
   constructor: (@scope, @state) ->
     @scope.page = @state.current.name
-    @scope.isOnPage = @isOnPage
+    # @scope.isOnPage = @isOnPage
+    @scope.showMenu = false
 
-  isOnPage: (page) =>
-    page == @state.current.name
+    @scope.$on '$stateChangeSuccess', (event, toState, toParams, fromState, fromParams) =>
+      @scope.showMenu = false
+      @scope.page = @state.current.name
 
 module.exports = FrontController
