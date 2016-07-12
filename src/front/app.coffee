@@ -3,7 +3,6 @@ Router = require './routes'
 app = angular.module 'app', [
   'ui.router'
   'viewhead'
-  'ui.bootstrap'
 ]
 
 app.constant 'config',

@@ -39,13 +39,6 @@ bundles = [
     extensions : ['.coffee']
     destination: 'build/front/'
   }
-  {
-    input    : ['src/app/app.coffee']
-    output   : 'app.js'
-    transform  : ['coffeeify']
-    extensions : ['.coffee']
-    destination: 'build/app/'
-  }
 ]
 
 gulp.task 'compile', ->
