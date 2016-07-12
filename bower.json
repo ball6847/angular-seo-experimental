@@ -1,36 +1,39 @@
 {
-    "name": "src",
-    "version": "0.0.0",
-    "authors": [
-        "Porawit Poboonma <ball6847@gmail.com>"
-    ],
-    "license": "MIT",
-    "ignore": [
-        "**/.*",
-        "node_modules",
-        "bower_components",
-        "test",
-        "tests"
-    ],
-    "dependencies": {
-        "jquery": "~2.1.4",
-        "bootstrap": "~3.3.4",
-        "angular": "1.4",
-        "angular-ui-router": "~0.2.15",
-        "angular-resource": "~1.4.0",
-        "animate.css": "~3.3.0",
-        "font-awesome": "~4.3.0",
-        "restangular": "~1.5.1",
-        "angular-moment": "~0.10.1",
-        "angular-loading-bar": "~0.8.0",
-        "angularjs-viewhead": "~0.0.1",
-        "angular-nl2br": "https://github.com/philsch/angular-nl2br.git#^1.0.4"
-    },
-    "overrides": {
-        "bootstrap": {
-            "main": [
-                "dist/css/bootstrap.css"
-            ]
-        }
+  "name": "src",
+  "version": "0.0.0",
+  "authors": [
+    "Porawit Poboonma <ball6847@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.4",
+    "angular": "1.4",
+    "angular-ui-router": "~0.2.15",
+    "angular-resource": "~1.4.0",
+    "animate.css": "~3.3.0",
+    "font-awesome": "~4.3.0",
+    "restangular": "~1.5.1",
+    "angular-moment": "~0.10.1",
+    "angular-loading-bar": "~0.8.0",
+    "angularjs-viewhead": "~0.0.1",
+    "angular-nl2br": "https://github.com/philsch/angular-nl2br.git#^1.0.4"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.css"
+      ]
     }
+  },
+  "resolutions": {
+    "angular": "1.5.7"
+  }
 }
